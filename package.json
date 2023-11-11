@@ -1,0 +1,20 @@
+{
+  "name": "node-discord-bot-template",
+  "version": "1.0.0",
+  "description": "A template for a Discord bot written in Node.js",
+  "scripts": {
+    "build": "rimraf ./build && tsc",
+    "dev": "npm run build && node -r dotenv/config build/bot.js",
+    "start": "node build/bot.js"
+  },
+  "author": "dysolix <contact@dysolix.dev>",
+  "dependencies": {
+    "discord.js": "^14.13.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "rimraf": "^4.1.2",
+    "typescript": "^4.9.4"
+  },
+  "type": "module"
+}
